@@ -1,6 +1,6 @@
 import pdfplumber
 import pyttsx3 as speech
-pdf = pdfplumber.open('audioBook/half.pdf')
+pdf = pdfplumber.open('half.pdf')
 pages=pdf.pages[16:]
 speaker=speech.init()
 for i,pg in enumerate(pages):
